@@ -1,0 +1,39 @@
+*{margin: 0; padding: 0;}
+        body{
+            background: linear-gradient(rgb(228, 140, 6), blanchedalmond);
+        }
+        div{
+            width: 400px;   height: 800px;
+        }
+        #eclipse{
+            width: 150px;                  height: 150px;
+            background-color: brown;     border-radius: 50%;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            position: absolute;
+        }
+        @keyframes bounce{
+            0%{
+                top: 0;
+                left: 0;
+                filter: brightness(10%);
+            }
+            50%{
+                top: 450px;
+                left: 300px;
+                filter: brightness(100%);
+                width: 180px;
+                height: 180px;
+            }
+            100%{
+                top: 0;
+                left: 450px;
+                filter: brightness(10%);
+            }
+        }
+        hr{
+            border: 10px solid;
+        }
